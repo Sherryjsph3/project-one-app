@@ -1,17 +1,23 @@
 # tailormade *for you* 
 
-a simple web application that helps build custom daily workouts
+a simple minimalistic web application that provides custom daily workouts
 
 ## technologies used
 
 * HTML5
 * CSS3
-* JavaScript/jQuery
-* tailormade API
-* Instagram
-* icons
-* fonts
+* JavaScript
+* j Query
+* [tailormade API]("https://wger.de/api/v2/exercise/")
+* [Instagram](https://www.instagram.com/)
+* [icons](https://fontawesome.com/icons?d=gallery&p=2)
+* [fonts](https://fonts.google.com/)
 
+## user stories
+* as a busy I want be able to personalize routine
+* as a user no pressure
+* at my finger tips im ready wether im in the gym or at home 
+* accessile with out haveing to search  the web
 ## screenshots
 ### wireframes
 ![tailormade wireframe](imgs/tailormade-w-mobile.png)
@@ -24,9 +30,9 @@ a simple web application that helps build custom daily workouts
 click here to see the deployed app!
 
 ## future enhancements
-1. the ability to click on all the buttons th nav bar as well as the social links
+* the ability for the user to click on all the buttons in the navigation bar as well as the social links
 
-2. allow user to utilize the recipes activity tracker pick from different focused guides and to see successful transformations
+* allow users to utilize the recipes, activity trackers, pick from different focused guides, and look through successful transformations
 
 
 
