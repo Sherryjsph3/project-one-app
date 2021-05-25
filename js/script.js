@@ -12,45 +12,40 @@ let exerciseData; //global variable that we can access anywhere below
 const $mainContent = $('main');
 
 /*----- event listeners -----*/
-$('form').on('submit', handleGetData);
+// $('form').on('submit', handleGetData);
 
 /*----- functions -----*/
 
-
-// render() responsible for visualizing
+ // render() responsible for visualizing
 //.find will iterate through results and return the first result that matches the userInput. 
 // the results variable is referencing the array and result is representing each element within the array 
 
 function render() { 
-    let userInput = $('input#search').val();
-    let apiMatchWithUserInput = exerciseData.results.find(function(result) { 
-        if (result.name === userInput) {
-           $name.text(apiMatchWithUserInput.name);
-           $description.text(apiMatchWithUserInput.description);
-        };
-        
+    const html = exerciseData.results.map(function(result) {
+        return `
+        <article>
+        <h3>${result.name}</h3>
+        </article>
+        `;
     });
-  
-};
+    $mainContent.append(html);
+ };
 
+ 
+// forEach
+//  exerciseData.results.forEach(function(result) {
+//     if (result === exerciseData.name) {   
+//         $name.text(exerciseData.results.name);
+//     }
 
+// })
 
-// function render () {
-//     let apiMatchWithUserInput = exerciseData.results.forEach(function(result) {
-//         if (result === userInput) {
-//             return `${result.name}: ${result.descritption}`
-//         }
-//         console.log(apiMatchWithUserInput)
-//     })
-// }
-
-
+getApiData();
 //want to prevent a page refresh by calling prventDefault() on 'submit'
-    function handleGetData(event) {
-        event.preventDefault(); 
-      
+    function getApiData() {
+        // preventDefault(); 
         $.ajax({
-                url: `https://wger.de/api/v2/exercise/?format=json&limit=400`,
+                url: "https://wger.de/api/v2/exercise/?format=json&limit=20&language=2",
                 
             })
             .then(
@@ -58,21 +53,34 @@ function render() {
                     exerciseData = data;
                     render();
                     // exerciseData = "";
-
                 },
                 function (error) {
                     console.log('bad request: ', error);
                 }
-
-            );
-            
+                
+            );    
     }
 
+   
 
 
 
 
 
+
+
+
+
+
+    // let userInput = $('input#search').val();
+    // let apiMatchWithUserInput = exerciseData.results.find(function(result) { 
+    //     if (result.name === userInput) {
+    //        $name.text(apiMatchWithUserInput.name);
+    //        $description.text(apiMatchWithUserInput.description);
+    //     };
+        
+    // });
+  
 
 
 
