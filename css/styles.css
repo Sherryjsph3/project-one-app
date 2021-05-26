@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: didot;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1 {
+    font-family: didot;
+}
+footer {
+    justify-content: center;
+    text-align: center;
+}
+main {
+    /* flex-grow: 1; */
+    display: flex;/* display horizontally so they ar sitting inside a main container what can give us that ability*/
+    flex-wrap: wrap;
+    max-width: 1040px;
+    margin: auto;
+}
+article {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex; /*why set article to display flex...flex containers allow us to center horizonal and vertical */
+    flex-direction: column;/*stacked one on top of the other */
+    justify-content: space-evenly;/*main axis is vertical so we want this to be*/
+    padding-left: 15px; /*pushess inward*/
+    margin: 10px;/*pushes outward*/
+    font-size: 10px;
+}
+
+
+footer {
+    justify-content: center;
+    align-items: center;
+}
