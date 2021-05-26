@@ -20,7 +20,7 @@ a simple minimalistic web application that provides custom daily workouts
 
 ## screenshots
 ### wireframes
-![tailormade wireframe](imgs/tailormade.png)
+![tailormade wireframe](imgs/tailormadetwo.png)
 ### working app
 <br>
 <br>

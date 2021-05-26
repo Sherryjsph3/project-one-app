@@ -8,22 +8,25 @@ const $mainContent = $('main');
 const $modal = $('.modal');
 
 /*----- event listeners -----*/
-$mainContent.on('click', 'article', handleClick);//this event handler will only get caalled when a card is clicked
+//this event handler will only get called when a card is clicked
+$mainContent.on('click', 'article', handleClick);
 
 /*----- functions -----*/
  // render() responsible for visualizing
 // the results variable is referencing the array and result is representing each element within the array 
 
 function render() { 
-    const html = exerciseData.results.map(function(result) {
+    let html = exerciseData.results.map(function(result) {
+        
         return `
-        <article data-exerise-name"${result.name}">
+        <article data-exercise-name="${result.name}" ">
         <h3>${result.name}</h3>
-        </article>
-        `;
+        </article>`;
     });
+
     $mainContent.append(html);
- };
+ }
+
 
 getApiData();
     function getApiData() {
@@ -41,36 +44,27 @@ getApiData();
     }
 
 function handleClick() {
-    const exerciseName = this.dataset.exerciseName
-     
+    const exerciseName = this.dataset.exerciseName;
+ 
     const outcome = exerciseData.results.find(function(result) {
          return result.name === exerciseName;
          
      });
-     console.log(outcome);
-
-
+     
         const html = `
         <div>
-            <h3>${exerciseData.results.name}</h3>
-            <p>${exerciseData.results.description}</p>
+            <h3>${outcome.name}</h3>
+            <p>${outcome.description}</p>
             </div>
         `;
 
         $modal.html(html).modal();
-};
+}
 
 
 
 
 
-
-
-
-
-
-
-  
 
 
 
