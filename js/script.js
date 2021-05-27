@@ -31,7 +31,7 @@ function render() {
 getApiData();
     function getApiData() {
         $.ajax({
-                url: "https://wger.de/api/v2/exercise/?format=json&limit=16&language=2",
+                url: "https://wger.de/api/v2/exercise/?format=json&limit=20&language=2",
             })
             .then(function (data) {
                     exerciseData = data;
@@ -53,8 +53,8 @@ function handleClick() {
      
         const html = `
         <div>
-            <h3>${outcome.name}</h3>
-            <p>${outcome.description}</p>
+            <h3><strong>${outcome.name}</strong></h3>
+            <p id="description">${outcome.description}</p>
             </div>
         `;
 

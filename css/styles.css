@@ -4,16 +4,56 @@
 }
 body {
     font-family: didot;
+    font-weight: 200;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 150vh;
+}
+#nav-bar {
+  text-align: right;
+  padding-right: 60px;
+  margin-top: -100px;
+}
+
+a {
+    color: #000;
+}
+li {
+    font-family: didot;
+    font-size: 12px;
+    font-weight: lighter;
+    color: black;
+    display: inline;
+    padding: 0px 10px 0px 10px; 
+    margin-left: 14px;
+    
 }
 h1 {
     font-family: didot;
+    font-size: 70px;
+    font-weight: lighter;
+    padding: 80px 0px 0px 60px;
 }
+h4 {
+    font-family: didot;
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 0px 0px 0px 300px;
+}
+#quote {
+    font-family: didot;
+    font-weight: lighter;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 200px;
+}
+
 footer {
+    font-size: 12px;
     justify-content: center;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 main {
     /* flex-grow: 1; */
@@ -22,21 +62,30 @@ main {
     max-width: 1040px;
     margin: auto;
 }
+h3 {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.description {
+    font-size: 12px;
+}
+
 article {
-    width: 200px;
+    width: 180px;
     height: 50px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 12px;
     display: flex; /*why set article to display flex...flex containers allow us to center horizonal and vertical */
     flex-direction: column;/*stacked one on top of the other */
     justify-content: space-evenly;/*main axis is vertical so we want this to be*/
     padding-left: 15px; /*pushess inward*/
     margin: 10px;/*pushes outward*/
-    font-size: 10px;
+    font-family: didot;
+    
 }
 
+/* .modal {
 
-footer {
-    justify-content: center;
-    align-items: center;
-}
+} */
+    
