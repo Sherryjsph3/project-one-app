@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 body {
     font-family: didot;
     font-weight: 200;
@@ -12,17 +13,18 @@ body {
     background-size: 60%;
     background-position: right;
     background-repeat: no-repeat;
-  
+
 }
+
 #nav-bar {
-  text-align: right;
-  padding-right: 60px;
-  margin-top: -100px;
- 
+    text-align: right;
+    padding-right: 60px;
+    margin-top: -100px;
+
 }
 
 a {
-   text-decoration: none;
+    text-decoration: none;
     color: rgb(186, 148, 120);
 }
 
@@ -32,10 +34,11 @@ li {
     font-weight: lighter;
     color: black;
     display: inline;
-    padding: 0px 10px 0px 10px; 
+    padding: 0px 10px 0px 10px;
     margin-left: 14px;
-    color: white; 
+    color: white;
 }
+
 h1 {
     font-family: didot;
     font-size: 100px;
@@ -43,6 +46,7 @@ h1 {
     padding: 80px 0px 0px 60px;
     color: rgb(186, 148, 120);
 }
+
 h4 {
     font-family: didot;
     font-weight: lighter;
@@ -50,79 +54,77 @@ h4 {
     padding: 0px 0px 0px 500px;
     color: rgb(186, 148, 120);
 }
+
 #quote {
     font-family: didot;
     font-weight: lighter;
     font-size: 45px;
-    text-align:center;
+    text-align: left;
     margin-top: 200px;
+    margin-left: 100px;
     color: rgb(186, 148, 120);
 }
+
 #bigger-quote {
     font-family: didot;
     font-weight: lighter;
-    font-size: 60px;
-    text-align:center;
-    margin-left: 200px;
+    font-size: 45px;
+    text-align: left;
+    margin-left: 100px;
     color: rgb(186, 148, 120);
-    padding: 0px 0px 0px 500px;
 }
 
-
-
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
     font-size: 15px;
     justify-content: center;
     text-align: center;
-    align-items: center;
     color: rgb(186, 148, 120);
-    
+
 }
 
 main {
-    /* flex-grow: 1; */
-    display: flex;/* display horizontally so they ar sitting inside a main container what can give us that ability*/
+    display: flex;
     flex-wrap: wrap;
     max-width: 800px;
     margin: 300px 0px 0px 60px;
 }
+
 h3 {
     font-weight: 100;
-    font-size: 16px;
+    font-size: 15px;
+
 }
 
 .description {
     font-size: 12px;
+    
+
 }
 
+
 article {
-    width: 250px;
+    width: 270px;
     height: 70px;
-    /* border: 1px solid white; */
     border-radius: 12px;
-    display: flex ; /*why set article to display flex...flex containers allow us to center horizonal and vertical */
-    flex-direction: column;/*stacked one on top of the other */
-    justify-content: space-evenly;/*main axis is vertical so we want this to be*/
-    padding-left: 15px; /*pushess inward*/
-    margin: 10px;/*pushes outward*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
     font-family: didot;
     color: rgb(229, 221, 209);
     background-color: rgb(186, 148, 120);
-    box-shadow: 0 4px 8px 0 rgba(137, 107, 82, 0.2), 0 6px 20px 0 rgba(137, 107, 82, 0.19); 
-    
+    box-shadow: 0 4px 8px 0 rgba(137, 107, 82, 0.2), 0 6px 20px 0 rgba(137, 107, 82, 0.19);
+    padding: 15px
+
 }
 
-footer {
-    font-size: 15px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: rgb(229, 221, 209);
-    margin-bottom: 20px;
+.modal {
+    font-family: didot;
+    color: rgba(137, 107, 82);
+    background-color: rgb(229, 221, 209) !important;
+
 }
-
-
-/* .modal {
-
-} */
-    

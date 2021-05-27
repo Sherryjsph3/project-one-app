@@ -59,7 +59,9 @@ function handleClick() {
         `;
 
         $modal.html(html).modal();
+       
 }
+
 
 
 
