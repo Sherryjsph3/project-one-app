@@ -7,9 +7,12 @@ body {
     font-weight: 200;
     display: flex;
     flex-direction: column;
-    min-height: 105vh;
-    background-image: url(https://i.imgur.com/8H7hgRj.jpg);
-    background-size: 80%;
+    min-height: 100vh;
+    background-image: url(https://i.imgur.com/v2Cz1U6.png);
+    background-size: 60%;
+    background-position: right;
+    background-repeat: no-repeat;
+  
 }
 #nav-bar {
   text-align: right;
@@ -20,11 +23,12 @@ body {
 
 a {
    text-decoration: none;
-    color: rgb(229, 221, 209);
+    color: rgb(186, 148, 120);
 }
+
 li {
     font-family: didot;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: lighter;
     color: black;
     display: inline;
@@ -34,41 +38,53 @@ li {
 }
 h1 {
     font-family: didot;
-    font-size: 90px;
+    font-size: 100px;
     font-weight: lighter;
     padding: 80px 0px 0px 60px;
-    color: rgb(229, 221, 209);
+    color: rgb(186, 148, 120);
 }
 h4 {
     font-family: didot;
     font-weight: lighter;
     font-size: 28px;
-    padding: 0px 0px 0px 400px;
-    color: rgb(229, 221, 209);;
+    padding: 0px 0px 0px 500px;
+    color: rgb(186, 148, 120);
 }
 #quote {
     font-family: didot;
     font-weight: lighter;
-    font-size: 32px;
-    text-align: center;
+    font-size: 45px;
+    text-align:center;
     margin-top: 200px;
-    color: rgb(229, 221, 209);
+    color: rgb(186, 148, 120);
 }
+#bigger-quote {
+    font-family: didot;
+    font-weight: lighter;
+    font-size: 60px;
+    text-align:center;
+    margin-left: 200px;
+    color: rgb(186, 148, 120);
+    padding: 0px 0px 0px 500px;
+}
+
+
 
 footer {
     font-size: 15px;
     justify-content: center;
     text-align: center;
-    justify-content: center;
     align-items: center;
-    color: rgb(229, 221, 209);
+    color: rgb(186, 148, 120);
+    
 }
+
 main {
     /* flex-grow: 1; */
     display: flex;/* display horizontally so they ar sitting inside a main container what can give us that ability*/
     flex-wrap: wrap;
-    max-width: 1500px;
-    margin: auto;
+    max-width: 800px;
+    margin: 300px 0px 0px 60px;
 }
 h3 {
     font-weight: 100;
@@ -80,9 +96,9 @@ h3 {
 }
 
 article {
-    width: 270px;
+    width: 250px;
     height: 70px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 12px;
     display: flex ; /*why set article to display flex...flex containers allow us to center horizonal and vertical */
     flex-direction: column;/*stacked one on top of the other */
@@ -91,10 +107,20 @@ article {
     margin: 10px;/*pushes outward*/
     font-family: didot;
     color: rgb(229, 221, 209);
-    background-color: rgb(137, 107, 82);
-    box-shadow: 0 4px 8px 0 rgba(187, 185, 185, 0.2), 0 6px 20px 0 rgba(211, 208, 208, 0.19); 
+    background-color: rgb(186, 148, 120);
+    box-shadow: 0 4px 8px 0 rgba(137, 107, 82, 0.2), 0 6px 20px 0 rgba(137, 107, 82, 0.19); 
     
 }
+
+footer {
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(229, 221, 209);
+    margin-bottom: 20px;
+}
+
 
 /* .modal {
 
