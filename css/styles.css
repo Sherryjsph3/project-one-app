@@ -13,14 +13,12 @@ body {
     background-size: 60%;
     background-position: right;
     background-repeat: no-repeat;
-
 }
 
 #nav-bar {
     text-align: right;
     padding-right: 60px;
     margin-top: -100px;
-
 }
 
 a {
@@ -78,12 +76,15 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 7rem;
     font-size: 15px;
     justify-content: center;
     text-align: center;
     color: rgb(186, 148, 120);
+}
 
+h6 {
+    font-size: 18px;
 }
 
 main {
@@ -96,15 +97,11 @@ main {
 h3 {
     font-weight: 100;
     font-size: 15px;
-
 }
 
 .description {
     font-size: 12px;
-    
-
 }
-
 
 article {
     width: 270px;
@@ -119,12 +116,133 @@ article {
     background-color: rgb(186, 148, 120);
     box-shadow: 0 4px 8px 0 rgba(137, 107, 82, 0.2), 0 6px 20px 0 rgba(137, 107, 82, 0.19);
     padding: 15px
-
 }
 
 .modal {
     font-family: didot;
     color: rgba(137, 107, 82);
     background-color: rgb(229, 221, 209) !important;
+}
+
+.fa-instagram,
+.fa-facebook,
+.fa-youtube,
+.fa-spotify {
+    color: rgb(186, 148, 120);
+    display: inline-block;
+    padding: 8px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+        padding: 5px;
+    }
+
+    h4 {
+        font-size: 18px;
+        padding: 0px 0px 0px 200px;
+    }
+
+    li {
+        padding: 5px 1px 1px 1px;
+        display: block;
+        text-align: right;
+        font-size: 12px;
+    }
+
+    #nav-bar {
+        text-align: right;
+        padding-right: 10px;
+        margin-top: -80px;
+
+    }
+
+    #quote {
+        font-size: 18px;
+        text-align: left;
+        margin-top: 200px;
+        margin-left: 100px;
+        color: rgb(186, 148, 120);
+    }
+
+    #bigger-quote {
+        font-size: 18px;
+        text-align: left;
+        margin-left: 20px;
+        color: rgb(186, 148, 120);
+    }
+
+    body {
+
+        min-height: 30vh;
+        background-image: url(https://i.imgur.com/v2Cz1U6.png);
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    article {
+        width: 150px;
+        height: 30px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 10px;
+        font-family: didot;
+        color: rgb(229, 221, 209);
+        background-color: rgb(186, 148, 120, 0.85);
+        box-shadow: 0 4px 8px 0 rgba(137, 107, 82, 0.2), 0 6px 20px 0 rgba(137, 107, 82, 0.19);
+        padding: 15px
+    }
+
+    
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: 310px 0px 0px 28px;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    .fa-instagram,
+    .fa-facebook,
+    .fa-youtube,
+    .fa-spotify {
+        color: rgb(186, 148, 120);
+        display: inline-block;
+        padding: 8px;
+        text-align: right;
+        font-size: .75rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
+        font-size: 10px;
+        justify-content: center;
+        text-align: center;
+        color: rgb(186, 148, 120);
+    }
+
+    h3 {
+        font-weight: 100;
+        font-size: 10px;
+    }
+    
+    .description {
+        font-size: 9px;
+    }
+
 
 }
