@@ -12,7 +12,7 @@ a simple minimalistic web application that provides custom daily exercises
 * [facebook](https://www.facebook.com/weglowapp/photos/130141715577102)
 * [icons](https://fontawesome.com/icons?d=gallery&p=2)
 * [figma](https://www.figma.com/files/user/979381893432674988?fuid=979381893432674988)
-* [pinterest](hhttps://www.pinterest.com/)
+* [pinterest](https://www.pinterest.com/)
 * [unsplash](https://unsplash.com/)
 * [imgur](https://imgur.com/)
 * [invisionapp](https://www.invisionapp.com/inside-design/design-resources/do/)
