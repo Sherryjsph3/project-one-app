@@ -35,7 +35,7 @@ a simple minimalistic web application that provides custom daily exercises
 
 ## getting started
 
-click here to see the deployed app!
+* [click here](https://sherryjsph3.github.io/tailormade/) to see the deployed app!
 
 ## future enhancements
 * the ability for the user to click/swipe to the next 20 exercises
