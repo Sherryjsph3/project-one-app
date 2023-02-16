@@ -8,8 +8,8 @@
     <!-- local CSS -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <!-- jQuery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- jQuery modal -->
@@ -26,16 +26,18 @@
     <header>
         <h1 id="title">tailormade</h1>
         <h4 id="sub-title"><em>for you</em></h4>
-    </header>
-    <ul id="nav-bar">
+        <ul id="nav-bar">
         <li><a href="#">learn</a></li>
         <li><a href="#">recipes</a></li>
         <li><a href="#">activity tracker</a></li>
         <li><a href="#">guides</a></li>
         <li><a href="#">transformations</a></li>
     </ul>
-
+    <button class="menu-btn" type="button" data-toggle="modal" data-target="#mobilenav"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    
     <div id="quote">
+
         <p>"i am here for good</p>
         <p id="bigger-quote">vibes and workouts"</p>
 

@@ -28,10 +28,10 @@ a simple minimalistic web application that provides custom daily exercises
 ![tailormade wireframe](imgs/tailormadefinal.png)
 
 ### working app
-![tailormade wireframe clicked](imgs/tailormadeweb.png)
-![tailormade wireframe clicked](imgs/tailormademobile.png)
-![tailormade wireframe clicked](imgs/tailormadewebtwo.png)
-![tailormade wireframe clicked](imgs/tailormademobiletwo.png)
+![tailormade](imgs/tailormadeweb.png)
+![tailormade mobile](imgs/tailormademobile.png)
+![tailormade clicked](imgs/tailormadewebtwo.png)
+![tailormade mobile clicked](imgs/tailormademobiletwo.png)
 
 ## getting started
 

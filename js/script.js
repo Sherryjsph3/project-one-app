@@ -1,7 +1,6 @@
 /*----- constants -----*/
 /*----- app's state (variables) -----*/
 let exerciseData; //global variable that we can access anywhere below
-// getting the value/result from the user input here
 
 /*----- cached element references -----*/
 const $mainContent = $('main');
