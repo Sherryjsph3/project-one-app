@@ -23,6 +23,7 @@ body {
 }
 .menu-btn {
     display: none;
+    color:rgba(137, 107, 82);
 }
 
 a {
@@ -122,7 +123,8 @@ article {
     color: rgb(229, 221, 209);
     background-color: rgb(186, 148, 120);
     box-shadow: 0 4px 8px 0 rgba(137, 107, 82, 0.2), 0 6px 20px 0 rgba(137, 107, 82, 0.19);
-    padding: 15px
+    padding: 15px;
+    cursor: pointer;
 }
 
 .modal {
@@ -141,20 +143,66 @@ article {
     text-align: right;
     font-size: 1.5rem;
 }
-@media (max-width: 1175px) {
+@media (max-width: 1199px) {
+    #nav-bar {
+        padding-right: 30px;
+        margin-top: -190px;
+    }
+    li {
+        font-size: 16px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 767px) {
     .menu-btn {
         display: block;
         float: right;
         border: none;
         outline: none;
         background-color: transparent;
-        margin: -162px 30px 0 0;
+        margin: -190px 30px 0 0;
         font-size: 40px;
-        color: rgba(186, 148, 120);
+        cursor: pointer;
+        z-index: 999;
+        position: sticky;
     }
-    #nav-bar {
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    #nav-bar  {
+        position:fixed;
+        height: 117vh;
+        width: 100%;
+        left: -100%;
+        top: 0; 
+        background-color: rgb(193, 156, 132);
+        text-align: center;
+        padding-top: 280px;
+    }
+    #nav-bar.active {
+        left: 0;
+    }
+    #nav-bar li {
+        display: block;
+    }
+    #nav-bar li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+        color:rgb(229, 221, 209);
+    }
+    /* #nav-bar {
         display: none;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: -162px;
     }
+    li {
+        padding: 5px 1px 1px 1px;
+        display: block;
+        text-align: right;
+        font-size: 12px;
+    } */
 
 }
 
@@ -169,12 +217,7 @@ article {
         padding: 0px 0px 0px 200px;
     }
 
-    li {
-        padding: 5px 1px 1px 1px;
-        display: block;
-        text-align: right;
-        font-size: 12px;
-    }
+   
 
     /* #nav-bar {
         text-align: right;

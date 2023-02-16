@@ -61,3 +61,11 @@ function handleClick() {
     $modal.html(html).modal();
 
 }
+
+$(document).ready(() => {
+    $('.menu-btn').click(function(){
+        $('#nav-bar').toggleClass("active")
+        $('.menu-btn i').toggleClass("active")
+    });
+})
+
