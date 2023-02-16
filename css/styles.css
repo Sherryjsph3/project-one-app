@@ -9,9 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(https://i.imgur.com/v2Cz1U6.png);
-    /* background-size: 60%; */
-    background-size: 50%;
+    background-image: url(../imgs/zen.png);
+    background-size: 60%;
+    /* background-size: 50%; */
     background-position: right;
     background-repeat: no-repeat;
 }
@@ -41,7 +41,6 @@ li {
     margin-left: 14px;
     color: white;
 }
-
 h1 {
     font-family: didot;
     font-size: 100px;
@@ -49,7 +48,6 @@ h1 {
     padding: 80px 0px 0px 60px;
     color: rgb(186, 148, 120);
 }
-
 h4 {
     font-family: didot;
     font-weight: lighter;
@@ -57,7 +55,6 @@ h4 {
     padding: 0px 0px 0px 500px;
     color: rgb(186, 148, 120);
 }
-
 #quote {
     font-family: didot;
     font-weight: lighter;
@@ -67,7 +64,6 @@ h4 {
     margin-left: 100px;
     color: rgb(186, 148, 120);
 }
-
 #bigger-quote {
     font-family: didot;
     font-weight: lighter;
@@ -76,7 +72,6 @@ h4 {
     margin-left: 100px;
     color: rgb(186, 148, 120);
 }
-
 footer {
     bottom: 0;
     width: 100%;
@@ -91,27 +86,20 @@ footer {
 h6 {
     font-size: 18px;
 }
-
 main {
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
     margin: 300px 0px 0px 60px;
 }
-
 h3 {
     font-weight: 100;
     font-size: 15px;
 }
-
 .description {
     font-size: 12px;
 }
-
 article {
-    /* width: 270px;
-    height: 70px;
-    border-radius: 12px; */
     width: 250px;
     height: 55px;
     border-radius: 15px;
@@ -143,6 +131,7 @@ article {
     text-align: right;
     font-size: 1.5rem;
 }
+
 @media (max-width: 1199px) {
     #nav-bar {
         padding-right: 30px;
@@ -153,6 +142,19 @@ article {
         margin-left: 0;
     }
 }
+
+@media (max-width: 999px) {
+    main {
+        max-width: 600px;
+        margin: 300px 0px 0px 50px;
+    }
+    article {
+        width: 200px;
+        height: 40px;
+        border-radius: 12px;
+    }
+}
+
 @media (max-width: 767px) {
     .menu-btn {
         display: block;
@@ -160,8 +162,8 @@ article {
         border: none;
         outline: none;
         background-color: transparent;
-        margin: -190px 30px 0 0;
-        font-size: 40px;
+        margin: -130px 60px 0 0;
+        font-size: 30px;
         cursor: pointer;
         z-index: 999;
         position: sticky;
@@ -191,44 +193,18 @@ article {
         font-size: 25px;
         color:rgb(229, 221, 209);
     }
-    /* #nav-bar {
-        display: none;
-        text-align: right;
-        padding-right: 10px;
-        margin-top: -162px;
-    }
-    li {
-        padding: 5px 1px 1px 1px;
-        display: block;
-        text-align: right;
-        font-size: 12px;
-    } */
-
-}
-
-@media (max-width: 600px) {
+ 
     h1 {
         font-size: 50px;
-        padding: 5px;
     }
-
     h4 {
         font-size: 18px;
         padding: 0px 0px 0px 200px;
     }
-
-   
-
-    /* #nav-bar {
-        text-align: right;
-        padding-right: 10px;
-        margin-top: -162px;
-    } */
-
     #quote {
         font-size: 18px;
         text-align: left;
-        margin-top: 200px;
+        margin-top: 60px;
         margin-left: 100px;
         color: rgb(186, 148, 120);
     }
@@ -241,11 +217,10 @@ article {
     }
 
     body {
-
         min-height: 30vh;
-        background-image: url(https://i.imgur.com/v2Cz1U6.png);
-        background-size: 80%;
-        background-position: center;
+        background-image: url(../imgs/zen.png);
+        background-size: 60%;
+        background-position: right top 300px;
         background-repeat: no-repeat;
     }
 
@@ -268,7 +243,7 @@ article {
         display: flex;
         flex-wrap: wrap;
         max-width: 400px;
-        margin: 310px 0px 0px 28px;
+        margin: 315px 0px 0px 28px;
     }
 
     h6 {
@@ -307,4 +282,34 @@ article {
     }
 
 
+}
+@media (max-width: 625px) {
+    body {
+        min-height: 30vh;
+        background-image: url(../imgs/zen.png);
+        background-size: 60%;
+        background-position: right top 288px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        background-position: center top 288px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        background-size: 80%;
+        background-position: center top 288px;
+    }
+    main {
+        justify-content: center;
+        margin: 315px auto 0;
+    }
+    .menu-btn {
+        margin: -130px 25px 0 0;
+        font-size: 25px;
+    }
 }
