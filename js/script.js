@@ -56,7 +56,7 @@ function handleClick() {
 
     const html = `
         <div>
-            <h3><strong>${outcome.name}</strong></h3>
+            <h2><strong>${outcome.name}</strong></h2>
             <p id='description'>${outcome.description}</p>
         </div>
         `;
