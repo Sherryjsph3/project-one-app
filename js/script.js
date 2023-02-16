@@ -36,15 +36,18 @@ function getApiData() {
         .then(function (data) {
                 exerciseData = data;
                 render();
+                console.log(exerciseData);
             },
             function (error) {
                 console.log('bad request: ', error);
             }
         );
+       
 }
 
 function handleClick() {
     const exerciseName = this.dataset.exerciseName;
+  
 
     const outcome = exerciseData.results.find(function (result) {
         return result.name === exerciseName;
@@ -55,7 +58,7 @@ function handleClick() {
         <div>
             <h3><strong>${outcome.name}</strong></h3>
             <p id='description'>${outcome.description}</p>
-            </div>
+        </div>
         `;
 
     $modal.html(html).modal();
